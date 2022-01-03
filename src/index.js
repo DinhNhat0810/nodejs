@@ -14,11 +14,11 @@ const route = require('./routes');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(
-    express.urlencoded({
-        extended: true,
-    }),
+  express.urlencoded({
+    extended: true,
+  }),
 );
-                      app.use(express.json());
+                app.use(express.json());
 
 // TEMPLATE ENGINE
 app.engine('hbs', hbs.engine);
@@ -32,5 +32,5 @@ app.use(morgan('combined'));
 route(app);
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Example app listening at http://localhost:${port}`);
 });
