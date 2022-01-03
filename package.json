@@ -9,7 +9,6 @@
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "prepare": "husky install"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DinhNhat0810/nodejs.git"
