@@ -18,7 +18,7 @@ app.use(
         extended: true,
     }),
 );
-app.use(express.json());
+                      app.use(express.json());
 
 // TEMPLATE ENGINE
 app.engine('hbs', hbs.engine);
