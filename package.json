@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write \"src/**/*.{js,json,scss}\"",
+    "cac": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/"
   },
@@ -24,7 +25,7 @@
   "homepage": "https://github.com/DinhNhat0810/nodejs#readme",
   "husky": {
     "hooks": {
-      "pre-commit": ""
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
