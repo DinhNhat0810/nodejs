@@ -5,7 +5,6 @@
   "main": "src/index.js",
   "scripts": {
     "beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write \"src/**/*.{js,json,scss}\"",
-    "cac": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss/ --output src/public/css/"
   },
@@ -26,17 +25,16 @@
   "lint-staged": {
     "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "express": "^4.17.2",
-    "express-handlebars": "^5.1.0"
+    "express-handlebars": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.1.4",
+    "mongoose-delete": "^0.5.4",
+    "mongoose-slug-generator": "^1.0.4"
   },
   "devDependencies": {
-    "husky": "^4.2.5",
+    "husky": "^7.0.4",
     "lint-staged": "^12.1.5",
     "morgan": "^1.10.0",
     "node-sass": "^7.0.1",
